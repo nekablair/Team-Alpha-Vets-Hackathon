@@ -42,7 +42,7 @@ Here are some general guidelines to follow when submitting a pull request.
 - Create a local feature branch
 - Make changes to the code
 - Add and commit changes to the feature branch
-- Push directly to develop
-- No PR needed
+- Push the feature branch
+- In Github GUI create a PR for approval and merge to the develop branch
 
 \*\*Implement the staging branch if needed. If we encounter too many bugs in main we will need to PR from dev to staging then PR to main. Although this is costly in time it may save us from ourselves.
