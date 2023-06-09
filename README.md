@@ -1,11 +1,16 @@
 # Team-Alpha-Vets-Hackathon 5/2023
 
 ## Equine Therapy App
+
 ### Problem Statement: 
 loremloremlorem
 
 ### Solution: 
 lorem lorem lorem
+
+### Team Members
+- Greg Petropoulos - Lead Developer
+
 ### Table of Contents
 
 [About](#about)
