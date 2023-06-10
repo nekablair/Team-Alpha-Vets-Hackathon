@@ -7,15 +7,13 @@ If you find a bug, check Trello to see if it's already been reported. If not, ad
 You can utilize the PR Template below for the project.
 
 ### Describe your changes
-- Inputchanges here
-### Issue ticket number and link
+- Input changes here
+### Issue ticket number
 - #_Number
-- URL
 ### Checklist before requesting a review
 - [ ] I have performed a self-review of my code
 - [ ] If it is a core feature, I have added thorough tests.
 - [ ] Do we need to implement analytics?
-- [ ] Will this be part of a product update? If yes, please write one phrase about this update.
 
 ## Writing A Pull Request
 
