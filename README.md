@@ -10,6 +10,7 @@ lorem lorem lorem
 
 ### Team Members
 - Greg Petropoulos - Lead Developer
+- Neka Blair - Designer/Developer
 
 ### Table of Contents
 
