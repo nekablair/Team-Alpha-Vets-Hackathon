@@ -1,11 +1,15 @@
 # Team-Alpha-Vets-Hackathon 5/2023
 
 ## Equine Therapy App
-### Problem Statement: 
+
+### Problem Statement:
+
 loremloremlorem
 
-### Solution: 
+### Solution:
+
 lorem lorem lorem
+
 ### Table of Contents
 
 [About](#about)
@@ -15,6 +19,7 @@ lorem lorem lorem
 [Team Procedures](#team-procedures)
 
 [Links and Resources](#links-and-resources)
+[How To Run Tests](#how-to-run-tests)
 
 ### About
 
@@ -24,6 +29,19 @@ lorem ipsum
 
 lorem ipsum
 
+### How To Run Tests
+#### Cypress
+- `npx cypress open ` Run through component/e2e testing in the lab page [Cypress Testing](https://docs.cypress.io/guides/component-testing/react/quickstart)
+- Write a simple test see docs 
+
+- If Running an E2E test, open a separate terminal cd into frontend folder and run `npm start`
+
+#### Formatting
+Make sure formatting is good before pushing
+
+```sh 
+npm run prettier
+```
 ### [Team Procedures](./docs/team-procedures.md)
 
 - Reporting Bugs
@@ -35,3 +53,7 @@ lorem ipsum
 ### Links and Resources
 
 [VA API](https://developer.va.gov/)
+
+[Cypress Testing](https://docs.cypress.io/guides/component-testing/react/quickstart)
+
+[Prettier](https://prettier.io/docs/en/install.html)
