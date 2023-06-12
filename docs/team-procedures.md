@@ -2,7 +2,24 @@
 
 If you find a bug, check Trello to see if it's already been reported. If not, add a new card to Bugs bucket.
 
-## Writing A Pull Requests
+## Pull Request Template
+
+You can utilize the PR Template below for the project.
+
+### Describe your changes
+- Describe your changes here and the problem you solved.
+
+### Checklist before requesting a review
+- [ ] I have performed a self-review of my code
+- [ ] If it is a core feature, I have added thorough tests.
+- [ ] Do we need to implement analytics?
+- [ ] Screenshots/gifs.
+- [ ] Does this PR merge into the main branch.
+- [ ] Does this PR merge into the develop branch.
+- [ ] Does this PR merge into the staging branch.
+- [ ] Describe out of scope work.
+
+## Writing A Pull Request
 
 Here are some general guidelines to follow when submitting a pull request.
 
