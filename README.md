@@ -20,7 +20,7 @@ Equine therapy app is the solution designed to addresses the pressing issues of 
 ### Team Members
 - Greg Petropoulos - Lead Developer
 - Neka Blair - Designer/Developer
-- Gladys Chiang
+- Gladys Chiang - Designer/Developer
 
 ### Table of Contents
 
@@ -53,4 +53,6 @@ The Equine Therapy for Veterans and Providers App is a team effort to provide a 
 
 ### Links and Resources
 
-[VA API](https://developer.va.gov/)
+- [VA API](https://developer.va.gov/)
+- [Healing Heroes Through Horses](https://www.vfw.org/media-and-events/latest-releases/archives/2022/7/healing-heroes-through-horses)
+- [New Freedom Farm - Veteran's Support Peer Group](https://www.newfreedomfarm.org/veteran-resources)
