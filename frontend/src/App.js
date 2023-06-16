@@ -12,7 +12,7 @@ const App = () => {
       <main className='py-3'>
         <Container>
           <h1>Equine Therapy App</h1>
-          <HomeScreen/>
+          <HomeScreen />
         </Container>
       </main>
       <Footer />
