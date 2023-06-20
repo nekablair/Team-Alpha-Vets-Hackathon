@@ -1,11 +1,9 @@
 /* CUSTOM CSS STYLES */
 main {
-    min-height: 80vh;
-  }
-  
-  table td,
-  table th {
-    text-align: center;
-  }
-  
-  
+  min-height: 80vh;
+}
+
+table td,
+table th {
+  text-align: center;
+}
