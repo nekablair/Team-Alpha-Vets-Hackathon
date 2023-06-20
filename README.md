@@ -57,3 +57,5 @@ npm run prettier
 [Cypress Testing](https://docs.cypress.io/guides/component-testing/react/quickstart)
 
 [Prettier](https://prettier.io/docs/en/install.html)
+
+[Customize Bootstrap](https://create-react-app.dev/docs/adding-bootstrap/)
