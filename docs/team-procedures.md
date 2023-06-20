@@ -6,7 +6,7 @@ If you find a bug, check Trello to see if it's already been reported. If not, ad
 
 Here are some general guidelines to follow when submitting a pull request.
 
-- Name your brach with your initials and a relevant name (ex: ls/update-product-card-styling)
+- Name your brach with your initials and a relevant name (ex: gp/update-product-card-styling)
 - If the new code will benefit from tests, include them in the initial PR, rather than a follow-up.
 - Before adding a reviewer, thoroughly test and review your own PR.
 - Try to keep pull requests as small and targeted as possible, making them easier to review.

@@ -6,7 +6,7 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 const Header = () => {
   return (
     <header>
-      <Navbar bg='info' expand='md' collapseOnSelect className="navbar-nav">
+      <Navbar bg='info' expand='md' collapseOnSelect className='navbar-nav'>
         <Container>
           <Navbar.Brand href='/'>
             {/* <img src={''} alt={''}/> */}
@@ -16,10 +16,7 @@ const Header = () => {
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='ms-auto'>
               <Nav.Link href='/about'>About</Nav.Link>
-              <Nav.Link href='/locator'>
-                {' '}
-                Locator
-              </Nav.Link>
+              <Nav.Link href='/locator'> Locator</Nav.Link>
               <Nav.Link href='/contact'>Contact</Nav.Link>
               <Nav.Link href='/resources'>Resources</Nav.Link>
               <Nav.Link href='/forms'>Forms</Nav.Link>
