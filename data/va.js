@@ -1,0 +1,31 @@
+const va = [
+  {
+    name: 'Ogden VA Clinic',
+    email: 'test1@example.com',
+    city: 'South Ogden',
+    state: 'UT',
+    zip: '84403',
+    lat: 41.191524,
+    long: -111.9726945,
+    website: 'https://www.va.gov/salt-lake-city-health-care/',
+    equineProviderName: 'Test 1',
+    equineProviderPhone: '919-100-2000',
+    equineProviderEmail: 'test@gmail.com',
+    equineProviderWebsite: 'www.example.com',
+  },
+  {
+    name: 'Thomas E. Creek Department of Veterans Affairs Medical Center',
+    email: 'test2@example.com',
+    city: 'Amarillo',
+    state: 'TX',
+    zip: '79106',
+    lat: 35.204049,
+    long: -101.906595,
+    website: 'https://www.va.gov/amarillo-health-care/',
+    equineProviderName: 'Test 2',
+    equineProviderPhone: '919-111-2555',
+    equineProviderEmail: 'test2@gmail.com',
+    equineProviderWebsite: 'www.example2.com',
+  },
+];
+export default va;
