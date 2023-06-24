@@ -2,7 +2,7 @@
   "name": "team-alpha-vets-hackathon",
   "description": "## Equine Therapy App",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "type": "module",
   "directories": {
     "doc": "docs"

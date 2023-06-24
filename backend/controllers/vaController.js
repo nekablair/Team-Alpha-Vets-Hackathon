@@ -28,20 +28,40 @@ const getVAByZip = asyncHandler(async (req, res) => {
   if (!!zipMatch) {
     res.status(200).json(zipMatch);
   } else {
-    res.status(404)
+    res.status(404);
     throw new Error('No zip match');
   }
 });
 
-// @description Fetch all va's
-//  @route      GET /api/va/all
+// @description Fetch all va's using pagination
+//  @route      GET /api/va/all?limit/offset
 //  @access     Public
 const getAllVA = asyncHandler(async (req, res) => {
-  const allVA = await VA.find({});
-  if (allVA) {
-    res.status(200).json(allVA);
+  try {
+    const limit = parseInt(req.query.limit);
+    const offset = parseInt(req.query.skip);
+    console.log('req.query.limit', req.query);
+
+    const allVA = await VA.find().skip(offset).limit(limit);
+    const allVACount = await VA.count();
+
+    const totalPages = Math.ceil(allVACount / limit);
+    const currentPage = Math.ceil(allVACount % offset);
+
+    res.status(200).send({
+      data: allVA,
+      paging: {
+        total: allVACount,
+        page: currentPage,
+        pages: totalPages,
+      },
+    });
+  } catch (err) {
+    console.log('Error', err);
+    res.status(500).send({
+      data: null,
+    });
   }
-  res.status(404)
-  throw new Error("No VA's found");
 });
+
 export { getAllVA, getVAByZip, getVAByState };

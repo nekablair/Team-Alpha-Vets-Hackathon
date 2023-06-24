@@ -1,6 +1,7 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import axios from 'axios';
+// import formatVAData from '../utils/formatVAData.js';
 import vaRoutes from './routes/vaRoutes.js';
 import connectDB from './config/db.js';
 import colors from 'colors';
