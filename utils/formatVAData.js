@@ -13,7 +13,7 @@ const formatVAData = vaHealthFacility.map((item) => {
       city: item?.properties?.address?.physical?.city,
       lat:lat,
       long:long,
-      website:item?.properties?.website?.split('locations')[0],
+      website:`${item?.properties?.website?.split('locations')[0]}programs/whole-health/`,
       equineProviderName: '',
       equineProviderPhone: '',
       equineProviderEmail: '',
@@ -21,6 +21,6 @@ const formatVAData = vaHealthFacility.map((item) => {
     };
     return formattedData
   });
-//   console.log('formatVAData', formatVAData);
+  console.log('formatVAData', formatVAData);
 
   export default formatVAData
