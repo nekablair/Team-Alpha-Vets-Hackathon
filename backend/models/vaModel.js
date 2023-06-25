@@ -2,6 +2,7 @@ import mongoose from 'mongoose';
 
 const vaSchema = mongoose.Schema(
   {
+    vaId:{ type: String },
     state: { type: String },
     city: { type: String },
     zip: { type: String },

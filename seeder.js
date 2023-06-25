@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import colors from 'colors';
-import va from './data/va.js'
+import vaData from './utils/formatVAData.js'
 import VA from './backend/models/vaModel.js';
 import connectDB from './backend/config/db.js';
 
@@ -14,7 +14,7 @@ const importData = async () => {
     // clearing data so it doesn't go into db with existing values
     await VA.deleteMany();
 
-    await VA.insertMany(va); //this is an array
+    await VA.insertMany(vaData); //this is an array
 
     console.log('Data Imported!'.green.inverse);
     process.exit();
