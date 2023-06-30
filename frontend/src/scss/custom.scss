@@ -1,0 +1,56 @@
+$theme-colors: (
+  'primary': #009970,
+  'secondary': #ddddde,
+  'accent-background': #ffffff,
+  'black-fade': #36343a,
+  //SECONDARY-FONT-COLOR
+  'white': whitesmoke//PRIMARY-FONT-COLOR,
+);
+@import '~bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
+}
+h6 {
+  text-transform: uppercase;
+}
+
+p,
+span,
+a {
+  font-family: 'Raleway', sans-serif;
+}
+html {
+  font-size: 1rem;
+}
+.test {
+  color: red;
+}
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.6rem;
+  }
+}
