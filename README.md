@@ -1,9 +1,11 @@
 # Team-Alpha-Vets-Hackathon 5/2023
 
 ## Equine Therapy App
+
 <em>Igniting Access to Equine Therapy for Veterans Nationwide </em>
 
-### Problem Statement: 
+### Problem Statement:
+
 - 🚩 Limited access to specialized therapy programs, such as equine therapy, hinders the mental health support available to veterans nationwide.
 - 🚩 Veterans outside Houston face significant challenges in accessing equine therapy services, as the availability of these programs is primarily concentrated in certain VA locations.
 - 🚩 Geographical barriers create disparities in the accessibility of equine therapy, denying many veterans the opportunity to benefit from this proven and effective form of treatment.
@@ -11,16 +13,21 @@
 
 ## Solution
 
-### Solution: 
-Equine therapy app is the solution designed to addresses the pressing issues of limited access to specialized therapy programs for veterans.  
-- 🌟 Our project focuses on mental health and aims to provide <strong> easy and efficient </strong> access to equine therapy throughout the VA system and breakdown geographical barrier. 
+### Solution:
+
+Equine therapy app is the solution designed to addresses the pressing issues of limited access to specialized therapy programs for veterans.
+
+- 🌟 Our project focuses on mental health and aims to provide <strong> easy and efficient </strong> access to equine therapy throughout the VA system and breakdown geographical barrier.
 - 🌟 The Equine Therapy App for Veterans and Providers bridges the gap in mental health support by connecting veterans with the transformative power of equine therapy, fostering healing, resilience, and well-being.
 - 🌟 By streamlining the search process and providing comprehensive information, our app empowers veterans to easily find nearby equine therapy options and make informed decisions about their mental health care.
 - 🌟 Additionally, we facilitate the connection between veterans and VA funding resources, ensuring financial support is readily available for those who need it most.
+
 ### Team Members
+
 - Greg Petropoulos - Lead Developer
 - Neka Blair - Designer/Developer
 - Gladys Chiang - Designer/Developer
+- Darryl Yeargin - Designer/Developer
 
 ### Table of Contents
 
