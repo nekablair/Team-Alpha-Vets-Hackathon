@@ -14,7 +14,9 @@
     "client": "npm start --prefix frontend ",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "prettier": "concurrently \"prettier --check ./frontend/src\" \"prettier --check ./backend\"",
-    "format": "concurrently \"prettier --write ./frontend/src\" \"prettier --write ./backend\""
+    "format": "concurrently \"prettier --write ./frontend/src\" \"prettier --write ./backend\"",
+    "data:import": "node backend/seeder",
+    "data:destroy": "node backend/seeder -d"
   },
   "repository": {
     "type": "git",
