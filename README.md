@@ -11,8 +11,6 @@
 - 🚩 Geographical barriers create disparities in the accessibility of equine therapy, denying many veterans the opportunity to benefit from this proven and effective form of treatment.
 - 🚩 Existing equine therapy resources are not widely accessible throughout the VA system, leading to a lack of support for veterans seeking holistic and comprehensive mental health care.
 
-## Solution
-
 ### Solution:
 
 Equine therapy app is the solution designed to addresses the pressing issues of limited access to specialized therapy programs for veterans.
