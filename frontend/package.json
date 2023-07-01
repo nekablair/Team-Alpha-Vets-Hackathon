@@ -1,6 +1,5 @@
 {
   "name": "frontend",
-  "proxy": "http://localhost:5000/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -47,5 +46,9 @@
   "devDependencies": {
     "cypress": "^12.16.0",
     "prettier": "^2.8.8"
+  },
+  "options": {
+    "allowedHosts": ["localhost", ".localhost"],
+    "proxy": "https://localhost:5000/"
   }
 }
