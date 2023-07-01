@@ -1,10 +1,35 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
+import backgroundImage from '../images/hero-stock-1.png';
 
 const Hero = () => {
+
+  const navigate = useNavigate();
+
+  const goToPrograms = () => {
+    navigate('/programs');
+  };
+
   return (
-    <div className='bg-black-fade'>
-      <h1 className='text-white'>Hero</h1>
-    </div>
+    <div  className='text-center'>
+      <div className='d-flex flex-column align-items-center justify-content-center h-75  p-5 object-fit-contain ' 
+        style={{ 
+          backgroundImage: `url(${backgroundImage})`
+        }}
+      >
+        <div 
+        className='mask py-4' 
+        style={{ 
+          backgroundColor: 'rgba(0, 0, 0, 0.6)'
+      }}
+      >
+        <h1 className='text-white'>Equine Therapy Healing for Veterans</h1>
+        <p className='text-white text-uppercase'>Locate an equine therapy supporting VA or a Veteran friendly horse healing facility.</p>
+        <Button variant='btn btn-outline-secondary' onClick={goToPrograms} >Get Started</Button>
+      </div>
+      </div>
+      </div>
   );
 };
 
