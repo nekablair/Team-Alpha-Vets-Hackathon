@@ -41,14 +41,24 @@ Equine therapy app is the solution designed to addresses the pressing issues of 
 
 ### About
 
-The Equine Therapy for Veterans and Providers App is a team effort to provide a comprehensive solution for veterans seeking equine therapy service. Our platform leverages innovative approaches to connect veterans with therapy providers across the VA system, <strong> transcending geographical barriers and ensuring access to vital mental health resources.</strong>
+The Equine Therapy for Veterans and Providers App is a team effort to provide an efficient solution for veterans seeking equine therapy service. Our app aims to connect veterans with therapy providers across the VA system, <strong> transcending geographical barriers and ensuring access to vital mental health resources.</strong>
 
 ### Architecture
 
 - Our app boasts a modular and scalable architecture, guaranteeing flexibility and maintainability.
 - By leveraging the VA API and web crawling techniques, we gather comprehensive and up-to-date data on equine therapy providers within the VA system.
+- The backend is built using _____,implementing best practices such as error handling, validation, and Git versioning.
+- The frontend is developed using React, utilizing PropTypes for type validation and incorporating error handling mechanisms.
 - The user interface is thoughtfully designed to be intuitive, providing a seamless experience for veterans to locate therapy facilities based on their location.
-- Our platform also facilitates connection with VA funding resources, streamlining the process for veterans to access and utilize these therapy services.
+- Our app goes beyond simply providing information about therapy facilities. It also facilitates the connection between veterans and VA funding resources. This means that veterans can easily access and utilize the necessary founding to receive the therapy services they need. We streamline this process to remove any unnecessary barriers and make it as efficient as possible.
+
+### Diagram of Architecture
+### Modeling of Data
+### A well-scoped MVP
+### Other Architectures Considered
+
+
+
 
 ### [Team Procedures](./docs/team-procedures.md)
 
@@ -63,3 +73,4 @@ The Equine Therapy for Veterans and Providers App is a team effort to provide a 
 - [VA API](https://developer.va.gov/)
 - [Healing Heroes Through Horses](https://www.vfw.org/media-and-events/latest-releases/archives/2022/7/healing-heroes-through-horses)
 - [New Freedom Farm - Veteran's Support Peer Group](https://www.newfreedomfarm.org/veteran-resources)
+-
