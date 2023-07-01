@@ -38,7 +38,15 @@ const FormsScreen = ({ google }) => {
 
             <div>
               <h2>Results:</h2>
-              {/* Display the map container */}
+              {/* Display the first map container */}
+              <MapContainer google={google} />
+            </div>
+
+            {/* Additional content... */}
+
+            <div>
+              <h2>Another Map:</h2>
+              {/* Display the second map container */}
               <MapContainer google={google} />
             </div>
           </div>
@@ -49,5 +57,5 @@ const FormsScreen = ({ google }) => {
 };
 
 export default GoogleApiWrapper({
-  apiKey: 'AIzaSyBFeSztX0yEUDOOWXftUlif9Zfd86_m-EM',
+  apiKey: 'YOUR_API_KEY',
 })(FormsScreen);
