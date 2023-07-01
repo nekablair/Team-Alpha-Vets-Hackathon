@@ -46,6 +46,5 @@
   "devDependencies": {
     "cypress": "^12.16.0",
     "prettier": "^2.8.8"
-  },
-  "proxy":5000
+  }
 }
