@@ -1,4 +1,4 @@
-# Team-Alpha-Vets-Hackathon 5/2023
+# Team-Alpha-Vets-Hackathon 7/1/2023
 
 ## Equine Therapy App
 
