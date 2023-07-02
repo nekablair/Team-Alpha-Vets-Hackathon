@@ -81,7 +81,7 @@ Our app boasts a modular and scalable architecture, guaranteeing flexibility and
 
 
 ### Diagram of Architecture
-![Architecture Diagram](/Users/gladyschiang/Documents/GitHub/Team-Alpha-Vets-Hackathon/Diagram of Architecture)
+![Alt text](<Diagram of Architecture/ET architecture diagram.png>)
 
 
 ---
