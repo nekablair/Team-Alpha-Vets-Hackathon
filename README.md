@@ -1,10 +1,10 @@
 # Team-Alpha-Vets-Hackathon 5/2023
 
-## Equine Therapy App
+## Equine Therapy App 
 
     Gallop Towards Wellness: Connecting Veterans with Equine Therapy 
 
-### 🚩 Problem Statement:
+### 🎯 Problem Statement:
 Veterans seeking equine therapy to enhance their mental health and overall well-being face significant challenges when it comes to accessibility. Equine-assisted psychotherapy (EAP) has shown remarkable benefits in supporting emotional well-being for individuals with anxiety, depression, PTSD, substance abuse, and other emotional and cognitive disorders. However, the limited availability and information about equine therapy services within the VA system hinder many veterans from accessing this effective form of treatment.
 
 
@@ -23,7 +23,7 @@ The Equine Therapy App is the solution aims to break geographical barriers and e
 ---
       
 
-### Team Members
+### Team Members 
 
 - Greg Petropoulos - Lead Developer
 - Neka Blair - Designer/Developer
@@ -94,13 +94,27 @@ To support the functionality of the app, we have designed the following data mod
 ## Well-Scoped MVP
 Our well-scoped Minimum Viable Product (MVP) includes the following features:
 
-- Form-based search functionality to locate equine therapy services based on state or zip code
-- Display of equine therapy provider information, including contact details and available services
-- Connection with VA funding resources for eligible veterans and 3rd party providers
-- Intuitive user interface for a seamless user experience
+- Form-based search functionality to locate equine therapy services based on state or zip code. (Home page)
+- Connect veterans to veteran friendly equine therapy services outside the VA. Display of equine therapy provider information, including contact details and available services. (Resources page)
+- Connection with VA funding resources for eligible veterans and 3rd party providers. Show the forms necessary for a nonprofit/provider to fill out either VA forms API or downloadable pdf. (Providers Page)
+- Intuitive user interface for a seamless user experience.
 
 ---
 ### Other Architectures Considered
+
+During the planning phase, our team carefully evaluated various architectures to determine the best fit for The Equine Therapy App. 
+
+Monolithic Architecture: This traditional architecture approach would involve building the entire application as a single, interconnected unit. However, we decided against this architecture due to its limited scalability and potential difficulties in maintenance and future enhancements.
+
+Microservices Architecture: We explored the possibility of adopting a microservices architecture, where the application would be divided into smaller, loosely coupled services. Each service would handle a specific functionality, such as user management, therapy provider search, and VA funding connection. While this architecture provides flexibility and scalability, we realized it might introduce complexity during the initial development phase.
+
+Serverless Architecture: We also discussed a serverless architecture using cloud-based services like AWS Lambda or Azure Functions. This architecture would allow us to focus on developing individual functions without worrying about server management. However, we decided against it as it might introduce additional overhead and dependencies on specific cloud platforms.
+
+After careful consideration, we chose the <strong> MVC (Model-View-Controller) architecture </strong> as the most suitable option for our application. This architecture separates the application into three main components: the model, which represents the data and business logic; the view, responsible for the user interface; and the controller, which handles the communication between the model and view.
+
+By adopting the MVC architecture, we ensure clear separation of concerns, maintainability, and extensibility of our application. It also allows for easier testing and collaboration among team members, facilitating efficient development and deployment processes.
+
+
 
 
 
@@ -110,6 +124,7 @@ Our well-scoped Minimum Viable Product (MVP) includes the following features:
 - Reporting Bugs
 - Create a PR
 - Workflow
+
 
 ---
 
