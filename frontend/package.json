@@ -59,7 +59,7 @@
       "localhost",
       ".localhost"
     ],
-    "proxy": "https://devsquad.onrender.com",
+    "proxy": "https://equine-therapy-app.onrender.com",
     "devProxy": "http://localhost:5000"
   }
 }
