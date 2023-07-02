@@ -79,7 +79,6 @@ Our app boasts a modular and scalable architecture, guaranteeing flexibility and
 
 
 ### Diagram of Architecture
-![Diagram of Architecture](/Users/gladyschiang/Documents/GitHub/Team-Alpha-Vets-Hackathon/diagram/Equine Therapy Architecture Diagram.png)
 
 
 ---
