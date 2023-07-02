@@ -1,4 +1,4 @@
-# Team-Alpha-Vets-Hackathon 5/2023
+# Team-Alpha-Vets-Hackathon 7/1/2023
 
 ## Equine Therapy App 
 
@@ -6,8 +6,6 @@
 
 ### 🎯 Problem Statement:
 Veterans seeking equine therapy to enhance their mental health and overall well-being face significant challenges when it comes to accessibility. Equine-assisted psychotherapy (EAP) has shown remarkable benefits in supporting emotional well-being for individuals with anxiety, depression, PTSD, substance abuse, and other emotional and cognitive disorders. However, the limited availability and information about equine therapy services within the VA system hinder many veterans from accessing this effective form of treatment.
-
-
 
 
 ### 🌟 Solution:
@@ -114,10 +112,6 @@ After careful consideration, we chose the <strong> MVC (Model-View-Controller) a
 
 By adopting the MVC architecture, we ensure clear separation of concerns, maintainability, and extensibility of our application. It also allows for easier testing and collaboration among team members, facilitating efficient development and deployment processes.
 
-
-
-
-
 ---
 ### [Team Procedures](./docs/team-procedures.md)
 
@@ -152,4 +146,3 @@ A list of grant opportunities for horse therapy programs/ providers for veterans
 - [Newman's Own Foundation Grants](https://texvet.org/resources/newmans-own-foundation)
 - [The McCormick Foundation Veterans Program](https://www.mccormickfoundation.org/investments/veterans/)
 - [VA's Grant and Per Diem Program (GPD)](https://www.va.gov/homeless/gpd.asp)
-
