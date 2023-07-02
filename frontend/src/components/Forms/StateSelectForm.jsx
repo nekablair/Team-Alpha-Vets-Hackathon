@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Form, Field, Formik } from 'formik';
+import { Col } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import stateList from '../../data/states';
 import equineService from '../../services/equineServices';
@@ -8,7 +9,11 @@ import { useNavigate } from 'react-router-dom';
 const StateSelectForm = () => {
   const [isResults, setIsResults] = useState(false);
 
-  const [links, setLinks] = useState();
+  const [links, setLinks] = useState([]);
+
+  const toggle = () => {
+    setIsResults(!isResults);
+  };
 
   const navigate = useNavigate();
 
@@ -29,25 +34,20 @@ const StateSelectForm = () => {
       });
 
       results = results.flat();
-      const final = [...new Set(results)];
-      // if (final) {
+      let final = [...new Set(results)];
+      final = final.map((link) => {
+        return (
+          <Col lg={8}>
+            <a href={link}>{link}</a>
+          </Col>
+        );
+      });
       setLinks(final);
-      setIsResults(true);
-      // }
+      toggle();
       console.log('after setting links', links);
     } else {
       navigate('/resources');
     }
-  };
-
-  const FormResults = (formLinks) => {
-    const { final } = formLinks;
-    console.log('from form results', final);
-    const results = final.map((link) => {
-      return <a href={link}>link</a>;
-    });
-    console.log(results);
-    return results;
   };
 
   return (
@@ -62,10 +62,10 @@ const StateSelectForm = () => {
               </option>
             ))}
           </Field>
-          <Button type='submit'>Submit</Button>
+          <Button type='submit'>{isResults ? 'Close' : 'Submit'}</Button>
         </Form>
       </Formik>
-      {isResults && <FormResults formLinks={links} />}
+      {isResults && [links]}
     </React.Fragment>
   );
 };

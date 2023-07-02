@@ -6,9 +6,9 @@ const HomeScreen = () => {
   return (
     <div>
       <h1>Equine Therapy App</h1>
-      <StateSelectForm />
       HomeScreen
       <Hero />
+      <StateSelectForm />
       <h1 className='text-black-fade'>Theme Test</h1>
       <h5 className='bg-primary text-white'>
         Primary Background Color Test = bg-primary and Font Color Test = white
