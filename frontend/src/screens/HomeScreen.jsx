@@ -1,10 +1,12 @@
 import React from 'react';
 import { Row } from 'react-bootstrap';
 import Hero from '../components/Hero/Hero';
+import StateSelectForm from '../components/Forms/StateSelectForm';
 const HomeScreen = () => {
   return (
     <div>
       <h1>Equine Therapy App</h1>
+      <StateSelectForm />
       HomeScreen
       <Hero />
       <h1 className='text-black-fade'>Theme Test</h1>

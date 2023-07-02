@@ -16,6 +16,21 @@ const getVAByState = asyncHandler(async (req, res) => {
     throw new Error('No state match');
   }
 });
+// @description Fetch all Equine VA's in db by State
+//  @route      Post /api/va/state/equine
+//  @access     Public
+const getEquineByState = asyncHandler(async (req, res) => {
+  const { state } = req.body;
+
+  const stateMatch = await VA.find({ scrapedUrlResults: {"$ne": []}, state: state });
+
+  if (!!stateMatch) {
+    res.status(200).json(stateMatch);
+  } else {
+    res.status(404);
+    throw new Error('No state match');
+  }
+});
 
 // @description Fetch all va in db by ZIP
 //  @route      Post /api/va/zip
@@ -64,4 +79,4 @@ const getAllVA = asyncHandler(async (req, res) => {
   }
 });
 
-export { getAllVA, getVAByZip, getVAByState };
+export { getAllVA, getVAByZip, getVAByState, getEquineByState };
