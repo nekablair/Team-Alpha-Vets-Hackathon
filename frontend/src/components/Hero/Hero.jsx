@@ -13,7 +13,7 @@ const Hero = () => {
   return (
     <div className='text-center'>
       <div
-        className='d-flex flex-column align-items-center justify-content-center h-75  p-5 object-fit-contain '
+        className='d-flex flex-column align-items-center justify-content-center h-75  p-5 object-fit-contain center-block'
         style={{
           backgroundImage: `url(${backgroundImage})`,
         }}
