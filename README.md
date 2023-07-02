@@ -2,15 +2,15 @@
 
 ## Equine Therapy App
 
-<em> Harnessing Resilience: Connecting Veterans and Horses for Renewed Wellness </em>
+    Gallop Towards Wellness: Connecting Veterans with Equine Therapy 
 
-### Problem Statement:
+### 🚩 Problem Statement:
 Veterans seeking equine therapy to enhance their mental health and overall well-being face significant challenges when it comes to accessibility. Equine-assisted psychotherapy (EAP) has shown remarkable benefits in supporting emotional well-being for individuals with anxiety, depression, PTSD, substance abuse, and other emotional and cognitive disorders. However, the limited availability and information about equine therapy services within the VA system hinder many veterans from accessing this effective form of treatment.
 
 
-## Solution
 
-### Solution:
+
+### 🌟 Solution:
 
 The Equine Therapy App is the solution aims to break geographical barriers and efficiently connect veterans to equine therapy by providing the following core features:
 
@@ -20,8 +20,8 @@ The Equine Therapy App is the solution aims to break geographical barriers and e
 
 3. **Connect 3rd party providers to VA grants/funding:** We facilitate the connection between 3rd party equine therapy providers and VA grants/funding opportunities. This streamlines the process for providers to offer their services to veterans while accessing the necessary financial support.
 
-
-    🌟  
+---
+      
 
 ### Team Members
 
@@ -29,20 +29,36 @@ The Equine Therapy App is the solution aims to break geographical barriers and e
 - Neka Blair - Designer/Developer
 - Gladys Chiang - Designer/Developer
 - Darryl Yeargin - Designer/Developer
-
+- Michael Sigg - Designer/Developer
+---
 ### Table of Contents
 
 [About](#about)
 
 [Architecture](#architecture)
 
+[Diagram of Architecture](#diagram-of-architecture)
+
+[Modeling of Data](#modeling-of-data)
+
+[Well-Scoped MVP](#well-scoped-mvp)
+
 [Team Procedures](#team-procedures)
 
 [Links and Resources](#links-and-resources)
 
+---
 ### About
 
-The Equine Therapy for Veterans and Providers App is a team effort to provide an efficient solution for veterans seeking equine therapy service. Our app aims to connect veterans with therapy providers across the VA system, <strong> transcending geographical barriers and ensuring access to equine therapy to enhance veterans' mental health and wellness.</strong>
+Our Equine Therapy App, is a direct response to the challenges faced by veterans seeking equine therapy to enhance their mental health and overall well-being. 
+
+Recognizing the crucial need for improved access and information, our app is dedicated to bridging the gap and ensuring that equine therapy is readily available to veterans who seek it. By providing a comprehensive platform that connects veterans with a network of equine therapy providers, both within the VA system and beyond, we aim to break down barriers and empower veterans to take control of their mental health journey.
+
+Through our app, veterans can easily locate and connect with equine therapy providers in their area, regardless of their geographical location. We are committed to delivering a user-friendly experience that simplifies the process of accessing this vital form of treatment. Our mission is to empower veterans by providing them the knowledge and resources needed to make informed decisions about their mental health care.
+
+By leveraging technology and the power of collaboration, we aspire to enhance the lives of veterans by ensuring equitable access to the life-changing benefits of equine therapy. Together, we can make a difference in the well-being of our veterans and pave the way for a brighter future.
+
+---
 
 ### Architecture
 
@@ -65,8 +81,10 @@ Our app boasts a modular and scalable architecture, guaranteeing flexibility and
 
 
 ### Diagram of Architecture
+![Architecture Diagram](/Users/gladyschiang/Documents/GitHub/Team-Alpha-Vets-Hackathon/Diagram of Architecture)
 
 
+---
 ## Modeling of Data
 To support the functionality of the app, we have designed the following data models:
 
@@ -81,11 +99,12 @@ Our well-scoped Minimum Viable Product (MVP) includes the following features:
 - Connection with VA funding resources for eligible veterans and 3rd party providers
 - Intuitive user interface for a seamless user experience
 
+---
 ### Other Architectures Considered
 
 
 
-
+---
 ### [Team Procedures](./docs/team-procedures.md)
 
 - Reporting Bugs
