@@ -79,8 +79,7 @@ Our app boasts a modular and scalable architecture, guaranteeing flexibility and
 
 
 ### Diagram of Architecture
-
-
+<img src="Diagram of Architecture/equine therapy architechture diagram.png"/>
 
 ---
 ## Modeling of Data
