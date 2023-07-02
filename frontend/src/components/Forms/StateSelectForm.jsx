@@ -38,7 +38,9 @@ const StateSelectForm = () => {
       final = final.map((link) => {
         return (
           <Col lg={8}>
-            <a href={link}>{link}</a>
+            <a href={link} key={link}>
+              {link}
+            </a>
           </Col>
         );
       });
