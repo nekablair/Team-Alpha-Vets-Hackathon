@@ -17,7 +17,7 @@ const ResourcesScreen = () => {
         truncate[i] = truncate[i].charAt(0).toUpperCase() + truncate[i].slice(1) + ' ';
       }
       return (
-        <Col lg={4}>
+        <Col lg={4} key={truncate}>
           <a href={link}>{truncate}</a>
         </Col>
       );
@@ -29,7 +29,7 @@ const ResourcesScreen = () => {
   const externalLinkMapper = (arr) => {
     let mapped = arr.map((link) => {
       return (
-        <Col>
+        <Col lg={6} key={link.title}>
           <a href={link.externalUrl}>{link.title}</a>
           <p>{link.description}</p>
         </Col>
