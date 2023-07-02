@@ -3,7 +3,7 @@ import { Form, Button } from 'react-bootstrap';
 
 const VaForm = () => {
   const arr = ["AL", "TX", "FL"];
-
+  const external = []
 
   return (
 
