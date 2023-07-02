@@ -23,7 +23,7 @@ const getVAByState = asyncHandler(async (req, res) => {
 const getVAByZip = asyncHandler(async (req, res) => {
   const { zipCode } = req.body;
 
-  const zipMatch = await VA.find({ zip: {"$regex": zipCode} });
+  const zipMatch = await VA.find({ zip: { $regex: zipCode } });
 
   if (!!zipMatch) {
     res.status(200).json(zipMatch);

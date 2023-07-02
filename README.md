@@ -4,6 +4,8 @@
 
     Gallop Towards Wellness: Connecting Veterans with Equine Therapy 
 
+
+[Deployed Here](https://64a17ec822c077567e8789b8--stellular-travesseiro-d0f082.netlify.app/)
 ### 🎯 Problem Statement:
 Veterans seeking equine therapy to enhance their mental health and overall well-being face significant challenges when it comes to accessibility. Equine-assisted psychotherapy (EAP) has shown remarkable benefits in supporting emotional well-being for individuals with anxiety, depression, PTSD, substance abuse, and other emotional and cognitive disorders. However, the limited availability and information about equine therapy services within the VA system hinder many veterans from accessing this effective form of treatment.
 
@@ -79,7 +81,7 @@ Our app boasts a modular and scalable architecture, guaranteeing flexibility and
 
 
 ### Diagram of Architecture
-<img src="Diagram of Architecture/equine therapy architechture diagram.png"/>
+<img src="./doc/Diagram%20of%20Architecture/equine%20therapy%20architechture%20diagram.png"/>
 
 ---
 ## Modeling of Data
