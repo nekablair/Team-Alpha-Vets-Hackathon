@@ -14,7 +14,6 @@ import AboutScreen from './screens/AboutScreen';
 import ProvidersScreen from './screens/ProvidersScreen';
 import ContactScreen from './screens/ContactScreen';
 import ResourcesScreen from './screens/ResourcesScreen';
-import FormsScreen from './screens/FormsScreen';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -24,7 +23,6 @@ const router = createBrowserRouter(
       <Route path='/providers' element={<ProvidersScreen />} />
       <Route path='/contact' element={<ContactScreen />} />
       <Route path='/resources' element={<ResourcesScreen />} />
-      <Route path='/forms' element={<FormsScreen />} />
     </Route>
   )
 );

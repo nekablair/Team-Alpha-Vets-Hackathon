@@ -33,10 +33,6 @@ const Header = () => {
               <LinkContainer to='/resources'>
                 <Nav.Link className='text-white'>Resources</Nav.Link>
               </LinkContainer>
-
-              <LinkContainer to='/forms'>
-                <Nav.Link className='text-white'>Forms</Nav.Link>
-              </LinkContainer>
             </Nav>
           </Navbar.Collapse>
         </Container>
