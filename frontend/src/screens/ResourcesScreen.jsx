@@ -1,6 +1,7 @@
 import React from 'react';
-import { Container, Row } from 'react-bootstrap';
-import newLinks from '../data/links';
+import { Container, Row, Col } from 'react-bootstrap';
+import newLinks from '../data/vaLinks';
+import externalResources from '../data/externalLinks';
 
 const ResourcesScreen = () => {
   const linkMapper = (arr) => {
@@ -16,9 +17,22 @@ const ResourcesScreen = () => {
         truncate[i] = truncate[i].charAt(0).toUpperCase() + truncate[i].slice(1) + ' ';
       }
       return (
-        <Row>
+        <Col lg={4}>
           <a href={link}>{truncate}</a>
-        </Row>
+        </Col>
+      );
+    });
+
+    return mapped;
+  };
+
+  const externalLinkMapper = (arr) => {
+    let mapped = arr.map((link) => {
+      return (
+        <Col>
+          <a href={link.externalUrl}>{link.title}</a>
+          <p>{link.description}</p>
+        </Col>
       );
     });
 
@@ -27,8 +41,14 @@ const ResourcesScreen = () => {
 
   return (
     <React.Fragment>
-      <h2>List of known VA health care centers</h2>
-      <Container>{linkMapper(newLinks)}</Container>
+      <Container>
+        <h3>External Resources for Veterans</h3>
+        <Row>{externalLinkMapper(externalResources)}</Row>
+      </Container>
+      <Container>
+        <h3>List of known VA health care centers</h3>
+        <Row>{linkMapper(newLinks)}</Row>
+      </Container>
     </React.Fragment>
   );
 };
