@@ -1,10 +1,14 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Row, Container, Col } from 'react-bootstrap';
 import { Map, Marker, GoogleApiWrapper } from 'google-maps-react';
+import  VaForm  from '../components/VaForm';
+
+let googleAPI = process.env.REACT_APP_GOOGLE_MAP;
+
 
 const MapContainer = ({ google, center, markers }) => {
   const [mapCenter, setMapCenter] = useState(center);
-
+  
   const handleMarkerClick = (markerProps, marker) => {
     const latLng = marker.getPosition();
     const lat = latLng.lat();
@@ -20,6 +24,8 @@ const MapContainer = ({ google, center, markers }) => {
   }, [markers]);
 
   return (
+    <>
+    <VaForm></VaForm>
     <div style={{ width: '100%', height: '400px' }}>
       <Map google={google} zoom={10} center={mapCenter}>
         {markers.map((marker, index) => (
@@ -31,6 +37,7 @@ const MapContainer = ({ google, center, markers }) => {
         ))}
       </Map>
     </div>
+    </>
   );
 };
 
@@ -109,5 +116,5 @@ const FormsScreen = ({ google }) => {
 };
 
 export default GoogleApiWrapper({
-  apiKey: 'AIzaSyBFeSztX0yEUDOOWXftUlif9Zfd86_m-EM',
+  apiKey: googleAPI,
 })(FormsScreen);

@@ -47,10 +47,14 @@
   },
   "devDependencies": {
     "cypress": "^12.16.0",
+    "dotenv": "^16.3.1",
     "prettier": "^2.8.8"
   },
   "options": {
-    "allowedHosts": ["localhost", ".localhost"],
+    "allowedHosts": [
+      "localhost",
+      ".localhost"
+    ],
     "proxy": "https://localhost:5000/"
   }
 }
