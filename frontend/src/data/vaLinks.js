@@ -1237,6 +1237,6 @@ export const allLinks = [
     "https://www.va.gov/tennessee-valley-health-care/",
   ];
 
-  let newLinks = [...new Set(allLinks)];
-  newLinks.sort();
-  export default newLinks;
+let newLinks = [...new Set(allLinks)];
+newLinks.sort();
+export default newLinks;

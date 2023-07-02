@@ -5,8 +5,6 @@ import StateSelectForm from '../components/Forms/StateSelectForm';
 const HomeScreen = () => {
   return (
     <div>
-      <h1>Equine Therapy App</h1>
-      HomeScreen
       <Hero />
       <StateSelectForm />
       <h1 className='text-black-fade'>Theme Test</h1>
