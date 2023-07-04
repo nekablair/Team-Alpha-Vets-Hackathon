@@ -15,7 +15,7 @@ const DropDown = () => {
     e.preventDefault();
     try {
       const response = await axios
-        .post('api/va/state', { state: selectedState })
+        .post('/api/va/state', { state: selectedState })
         .catch(function (error) {
           if (error.response) {
             // The request was made and the server responded with a status code
@@ -34,12 +34,14 @@ const DropDown = () => {
           }
           console.log(`Error Config: ${error?.config}`);
         });
-// console.log("response.status",response.status)
-// console.log("response",response)
-//       if (response?.status !== 200) {
-//         throw new Error(`Check Response -- ${response.status}`);
-//       }
-      setData(response?.data);
+      // console.log("response.status",response.status)
+      // console.log("response",response)
+      //       if (response?.status !== 200) {
+      //         throw new Error(`Check Response -- ${response.status}`);
+      //       }
+      if (response.data.length > 0) {
+        setData(response?.data);
+      }
     } catch (err) {
       console.error(err);
     }
