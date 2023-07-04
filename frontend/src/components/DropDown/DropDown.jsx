@@ -6,7 +6,7 @@ import axios from 'axios';
 
 const DropDown = () => {
   const [selectedState, setSelectedState] = useState([]);
-  const [data, setData] = useState('');
+  const [data, setData] = useState([]);
 
   const onChange = (e) => {
     setSelectedState(e.target.value);
