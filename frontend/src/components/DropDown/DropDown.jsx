@@ -34,12 +34,12 @@ const DropDown = () => {
           }
           console.log(`Error Config: ${error.config}`);
         });
-console.log("response.status",response.status)
-console.log("response",response)
-      if (response?.status !== 200) {
-        throw new Error(`Check Response -- ${response.status}`);
-      }
-      setData(response.data);
+// console.log("response.status",response.status)
+// console.log("response",response)
+//       if (response?.status !== 200) {
+//         throw new Error(`Check Response -- ${response.status}`);
+//       }
+      setData(response?.data);
     } catch (err) {
       console.error(err);
     }
