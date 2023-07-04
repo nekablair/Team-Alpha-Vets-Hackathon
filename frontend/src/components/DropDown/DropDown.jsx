@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
 import { Button, Form, Row, Col, Card } from 'react-bootstrap';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import stateList from '../../data/states';
 import axios from 'axios';
 
 const DropDown = () => {
-  const [isResults, setIsResults] = useState(false);
   const [selectedState, setSelectedState] = useState([]);
   const [data, setData] = useState('');
-  //   const navigate = useNavigate();
 
   const onChange = (e) => {
     setSelectedState(e.target.value);
@@ -16,7 +14,27 @@ const DropDown = () => {
   const onSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('api/va/state', { state: selectedState });
+      const response = await axios
+        .post('api/va/state', { state: selectedState })
+        .catch(function (error) {
+          if (error.response) {
+            // The request was made and the server responded with a status code
+            // that falls out of the range of 2xx
+            console.log(error.response.data);
+            console.log(error.response.status);
+            console.log(error.response.headers);
+          } else if (error.request) {
+            // The request was made but no response was received
+            // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
+            // http.ClientRequest in node.js
+            console.log(error.request);
+          } else {
+            // Something happened in setting up the request that triggered an Error
+            console.log('Error', error.message);
+          }
+          console.log(error.config);
+        });
+
       if (response.status !== 200) {
         throw new Error(`Check Response -- ${response.status}`);
       }
@@ -50,32 +68,32 @@ const DropDown = () => {
             </Button>
           </Row>
         </Form>
-        {data.length > 0 &&
-          data.map((item) => {
-            const removeSlash = item.scrapedUrlResults.filter((item) => !item.endsWith('/'));
-            const dedupe = [...new Set(removeSlash)];
-            return (
-              <Row className='justify-content-center'>
-                {dedupe.length > 0 && (
-                  <Col md={6} className='mt-3'>
-                    <Card>
-                      <Card.Header>Equine Therapy Service</Card.Header>
-                      <Card.Body>
-                        <Card.Text>{item.name}</Card.Text>
-                        <Card.Text>{item.city}</Card.Text>
-                        <Card.Text className='general-links'>
-                          <a className='general-links' href={dedupe} alt={item.name}>
-                            {dedupe}
-                          </a>
-                        </Card.Text>
-                      </Card.Body>
-                    </Card>
-                  </Col>
-                )}
-              </Row>
-            );
-          })}
       </Col>
+      {data.length > 0 &&
+        data.map((item) => {
+          const removeLastSlash = item.scrapedUrlResults.filter((item) => !item.endsWith('/'));
+          const dedupe = [...new Set(removeLastSlash)];
+          return (
+            <Row key={item._id} className='justify-content-center'>
+              {dedupe.length > 0 && (
+                <Col md={6} className='mt-3'>
+                  <Card>
+                    <Card.Header>Equine Therapy Service</Card.Header>
+                    <Card.Body>
+                      <Card.Text>{item.name}</Card.Text>
+                      <Card.Text>{item.city}</Card.Text>
+                      <Card.Text className='general-links'>
+                        <a className='general-links' href={dedupe} alt={item.name}>
+                          {dedupe}
+                        </a>
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              )}
+            </Row>
+          );
+        })}
       <p className='pt-4'>
         {' '}
         Check our
