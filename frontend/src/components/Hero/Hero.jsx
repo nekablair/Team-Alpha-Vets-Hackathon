@@ -10,7 +10,7 @@ const Hero = () => {
   };
 
   return (
-        <Container fluid className='justify-content-center image-overlay'>
+        <Container fluid className='px-0 mx-0 justify-content-center image-overlay'>
           <Row className='image-overlay-content'>
             <h1 className='text-white'>Equine Therapy Healing for Veterans</h1>
             <p className='text-white text-uppercase'>Learn more about equine/horse therapy</p>

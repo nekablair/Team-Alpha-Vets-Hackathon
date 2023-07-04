@@ -8,11 +8,9 @@ const App = () => {
   return (
     <>
       <Header />
-      <main className='py-3'>
-        <Container>
+      <Container fluid className='px-0 mx-0' >
           <Outlet />
-        </Container>
-      </main>
+      </Container>
       <Footer />
     </>
   );

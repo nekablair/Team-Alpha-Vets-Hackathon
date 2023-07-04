@@ -8,16 +8,16 @@ const Footer = () => {
   return (
     <footer className=' footer-background-image'>
       <Container>
-        <Row className='justify-content-center'>
+        <Row className='justify-content-center pt-2'>
           <Col className='align-items-center'>
-            <h3>Equine Therapy</h3>
-            <Link to='/about'>
+            <h5>Equine Therapy</h5>
+            <Link to='/about' className='general-links text-primary'>
               <h6>About</h6>
             </Link>
-            <Link to='/resources'>
+            <Link to='/resources' className='general-links text-primary'>
               <h6>Resources</h6>
             </Link>
-            <Link to='/contact'>
+            <Link to='/contact' className='general-links text-primary'>
               <h6>Contact Us</h6>
             </Link>
           </Col>

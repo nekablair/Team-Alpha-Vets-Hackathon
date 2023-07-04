@@ -1,7 +1,7 @@
 import React from 'react';
-import { Dropdown, Col, Row, Container } from 'react-bootstrap';
+import {Col, Row, Container } from 'react-bootstrap';
 import Hero from '../components/Hero/Hero';
-import StateSelectForm from '../components/Forms/StateSelectForm';
+// import StateSelectForm from '../components/Forms/StateSelectForm';
 import DropDown from '../components/DropDown/DropDown';
 
 const HomeScreen = () => {

@@ -16,7 +16,9 @@ $theme-colors: (
   margin: 0;
   padding: 0;
 }
+html,
 body {
+  font-size: 1rem;
   font-family: 'Open Sans', sans-serif;
   overflow-y: scroll;
 }
@@ -24,8 +26,12 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
+html::-webkit-scrollbar {
+  display: none;
+}
 
 /* Hide scrollbar for IE, Edge and Firefox */
+html,
 body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
@@ -47,9 +53,11 @@ span,
 a {
   font-family: 'Raleway', sans-serif;
 }
-html {
-  font-size: 1rem;
+.general-links {
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
 }
+
 .image-overlay {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
     url('../assets/images/hero-stock-1.png');
@@ -65,6 +73,23 @@ html {
   align-items: end;
   padding-top: 250px;
   text-align: center;
+}
+.footer-background-image {
+  background: url('../assets/images/footer.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+}
+.theme-gradient {
+  background: var(
+    --gradient,
+    radial-gradient(
+      2565.83% 271.15% at 18.54% 27.59%,
+      rgba(157, 200, 153, 0.34) 0%,
+      rgba(0, 153, 112, 0.8) 100%
+    )
+  );
 }
 @include media-breakpoint-up(sm) {
   html {

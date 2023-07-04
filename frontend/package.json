@@ -54,12 +54,8 @@
     "dotenv": "^16.3.1",
     "prettier": "^2.8.8"
   },
-  "options": {
-    "allowedHosts": [
-      "localhost",
-      ".localhost"
-    ],
+
     "proxy": "https://backend-equine.onrender.com",
     "devProxy": "http://localhost:5000"
-  }
+  
 }
