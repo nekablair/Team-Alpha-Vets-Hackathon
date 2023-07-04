@@ -32,7 +32,7 @@ const DropDown = () => {
             // Something happened in setting up the request that triggered an Error
             console.log(`Error Message: ${error.message}`);
           }
-          console.log(`Error Config: ${error.config}`);
+          console.log(`Error Config: ${error?.config}`);
         });
 // console.log("response.status",response.status)
 // console.log("response",response)
