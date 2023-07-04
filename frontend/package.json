@@ -55,7 +55,6 @@
     "prettier": "^2.8.8"
   },
 
-    "proxy": "https://backend-equine.onrender.com",
     "devProxy": "http://localhost:5000"
   
 }
