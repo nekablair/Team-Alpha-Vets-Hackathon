@@ -17,6 +17,7 @@ const app = express();
 
 //for body parsing the req.body in routes&controllers
 app.use(express.json());
+// app.use(cors({origin:'https://backend-equine.onrender.com/api/va/state',headers:['Content-Type'],credentials:true}))
 
 //ROUTES
 app.use('/api/va', vaRoutes);

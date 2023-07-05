@@ -14,9 +14,15 @@ const DropDown = () => {
   const onSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios
-        .post('/api/va/state', { state: selectedState })
-        .catch(function (error) {
+
+      // .post('/api/va/state', { state: selectedState })
+      const response = await axios({
+        method: 'post',
+        url: `/api/va/state`,
+        withCredentials: false,
+        headers:{ 'Content-Type': 'application/json'},
+        data:{state:selectedState}
+      }).catch(function (error) {
           if (error.response) {
             // The request was made and the server responded with a status code
             // that falls out of the range of 2xx
