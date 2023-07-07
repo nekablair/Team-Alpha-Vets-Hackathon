@@ -4,5 +4,5 @@ import { getAllVA, getVAByState, getVAByZip, getEquineByState } from '../control
 router.route('/all').get(getAllVA);
 router.route('/state').post(getVAByState);
 router.route('/zip').post(getVAByZip);
-router.route('/state/equine').post(getEquineByState);
+// router.route('/state/equine').post(getEquineByState);
 export default router;

@@ -11,8 +11,30 @@ $theme-colors: (
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
 body {
+  font-size: 1rem;
   font-family: 'Open Sans', sans-serif;
+  overflow-y: scroll;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html,
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 h1,
 h2,
@@ -31,11 +53,43 @@ span,
 a {
   font-family: 'Raleway', sans-serif;
 }
-html {
-  font-size: 1rem;
+.general-links {
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
 }
-.test {
-  color: red;
+
+.image-overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url('../assets/images/hero-stock-1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  height: 600px;
+  // padding-top: 50px;
+}
+.image-overlay-content {
+  justify-content: center;
+  align-items: end;
+  padding-top: 250px;
+  text-align: center;
+}
+.footer-background-image {
+  background: url('../assets/images/footer.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+}
+.theme-gradient {
+  background: var(
+    --gradient,
+    radial-gradient(
+      2565.83% 271.15% at 18.54% 27.59%,
+      rgba(157, 200, 153, 0.34) 0%,
+      rgba(0, 153, 112, 0.8) 100%
+    )
+  );
 }
 @include media-breakpoint-up(sm) {
   html {
@@ -58,9 +112,13 @@ html {
 .spinner {
   animation: spin 1s linear infinite;
   display: inline-block;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
   }
-  
-  @keyframes spin {
-  from {transform:rotate(0deg);}
-  to {transform:rotate(360deg);}
+  to {
+    transform: rotate(360deg);
   }
+}

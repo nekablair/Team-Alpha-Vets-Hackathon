@@ -55,7 +55,7 @@ const getAllVA = asyncHandler(async (req, res) => {
   try {
     const limit = parseInt(req.query.limit);
     const offset = parseInt(req.query.skip);
-    console.log('req.query.limit', req.query);
+    // console.log('req.query.limit', req.query);
 
     const allVA = await VA.find().skip(offset).limit(limit);
     const allVACount = await VA.count();

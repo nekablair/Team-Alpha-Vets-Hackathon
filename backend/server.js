@@ -17,6 +17,8 @@ const app = express();
 
 //for body parsing the req.body in routes&controllers
 app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+
 
 //ROUTES
 app.use('/api/va', vaRoutes);
